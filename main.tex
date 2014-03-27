@@ -1,0 +1,38 @@
+% Created 2014-01-06 Mon 18:47
+\documentclass[11pt,a4paper]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e, graphicx, longtable, float, wrapfig, soul,
+  textcomp, marvosym, wasysym, latexsym, hyperref, bbm,
+  fancybox,fancyvrb, cite,amsmath,amssymb,amsthm,amsrefs,color,subfig,pdfpages}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{tabularx}
+\tolerance=1000
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\newtheorem{thm}{\color{MidnightBlue}{Theorem}}[section]
+\newtheorem{cor}[thm]{\color{BurntOrange}{Corollary}}
+\newtheorem{lem}[thm]{\color{Peach}{Lemma}}
+\newtheorem{prop}[thm]{\color{RoyalPurple}{Proposition}}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{\color{SeaGreen}{Definition}}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{\color{WildStrawberry}{Remark}}
+\newtheorem{ex}[thm]{\color{Red}{Example}}
+\newtheorem{conj}[thm]{\color{GreenYellow}{Conjecture}}
+\numberwithin{equation}{section}
+\newenvironment{marginfigure}{\begin{figure}}{\end{figure}}
+
+\title{Article Title}
+\author{Sky Brewer}
+
+\date{\today}
+
+\begin{document}
+
+\input{text.tex}
+
+\bibliographystyle{amsalpha}
+\bibliography{ref}
+\end{document}
