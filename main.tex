@@ -2,13 +2,15 @@
 \documentclass[11pt,a4paper]{amsart}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{fixltx2e, graphicx, longtable, float, wrapfig, soul,
-  textcomp, marvosym, wasysym, latexsym, hyperref, bbm,
-  fancybox,fancyvrb, cite,amsmath,amssymb,amsthm,amsrefs,color,subfig,pdfpages}
+\usepackage{fixltx2e, graphicx, longtable,
+  float, wrapfig, soul, textcomp, marvosym, wasysym, latexsym,
+  hyperref, bbm, fancybox,fancyvrb,
+  amsmath,amssymb,amsthm,color,subfig,pdfpages}
+\usepackage[alphabetic, abbrev]{amsrefs}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{listings}
-\usepackage{tabularx}
-\tolerance=1000
+\usepackage[export]{adjustbox}
+\usepackage{tabularx} \tolerance=1000
 \providecommand{\alert}[1]{\textbf{#1}}
 
 \newtheorem{thm}{\color{MidnightBlue}{Theorem}}[section]
@@ -20,7 +22,7 @@
 \theoremstyle{remark}
 \newtheorem{rem}[thm]{\color{WildStrawberry}{Remark}}
 \newtheorem{ex}[thm]{\color{Red}{Example}}
-\newtheorem{conj}[thm]{\color{GreenYellow}{Conjecture}}
+\newtheorem{conj}[thm]{\color{Mahogany}{Conjecture}}
 \numberwithin{equation}{section}
 \newenvironment{marginfigure}{\begin{figure}}{\end{figure}}
 
@@ -29,10 +31,16 @@
 
 \date{\today}
 
-\begin{document}
+\begin{abstract}
+
+\end{abstract}
 
 \input{paper.tex}
 
-\bibliographystyle{amsalpha}
+\bibliographystyle{abbrv}
 \bibliography{../ref}
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:
